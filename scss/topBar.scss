@@ -1,0 +1,45 @@
+@import "./components";
+
+.top-bar{
+    display: none;
+}
+
+@include tablet{
+    .top-bar{
+        background-color: #ffffff;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 0;
+        transition: 0.5s;
+        overflow-x: hidden;
+        display: block;
+
+        .cancel-bar{
+            margin: 30px;
+    
+            i{
+                float: right;
+                cursor: pointer;
+            }
+        }
+    
+        .link-topbar{
+            padding: 40px;
+            a{
+                text-align: center;
+                margin: 10px 0;
+                text-decoration: none;
+                color: $mainFont;
+                padding: 8px;
+                font-weight: bold;
+                display: block;
+    
+                &:hover{
+                    background-color: #c7c2c25e;
+                }
+            }
+        }
+    }
+}

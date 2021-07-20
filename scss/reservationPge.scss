@@ -1,0 +1,170 @@
+@import "./components";
+
+.reservationContainer{
+    background-image: url("/Restau/img/clem-onojeghuo-zlABb6Gke24-unsplash\ 1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    @include indention();
+    @include tablet{
+        @include responsiveIndention();
+    }
+
+
+    .reservationHead{
+        text-align: center;
+        color: $white;
+        padding: 30px 0;
+
+        h1{
+            font-size: 55px;
+            font-weight: lighter;
+
+            @include tablet{
+                font-size: 30px;
+            }
+        }
+        p{
+            font-size: 18px;
+            font-weight: lighter;
+            @include tablet{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .reserveBtn{
+        padding-top: 50px;
+
+        @include tablet{
+            padding-top: 10px;
+        }
+
+        .reservationDetails{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            
+            input[type="date"], input[type="time"], select, button{
+                padding: 15px 5px;
+                width: 24%;
+                @include button();
+                border-radius: 5px;
+
+                @include tablet{
+                    width: 75%;
+                    margin: 8px 0px;
+                }
+            }
+
+            button{
+                background-color: $mainColor;
+                color: $white;
+            }
+
+            @include tablet{
+                flex-direction: column;
+            }
+        }
+
+    }
+    
+}
+
+
+main{
+    width: 100%;
+    height: auto;
+    @include indention();
+
+    @include  tablet{
+        @include responsiveIndention();
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px;
+
+        h1{
+            font-size: 55px;
+            font-weight: lighter;
+
+            @include  tablet{
+                font-size: 35px;
+            }
+        }
+
+        p{
+            span{
+                font-size: 40px;
+                margin: 0px 5px;
+                cursor: pointer;
+                color: $mainFont;
+                display: inline-block;
+                text-align: center;
+                width: 30px;
+                height: 30px;
+                line-height: 19px;
+
+                &:hover{
+                    background-color: $mainFont;
+                    color: $white;
+                }
+            }
+        }
+    }
+    // span{
+    //     position: absolute;
+    //     top: 40%;
+    //     left: 0.8%;
+    //     font-size: 90px;
+    //     font-weight: lighter;
+    //     color: rgb(0, 0, 0);
+    //     cursor: pointer;
+    //     z-index: 1;
+    // }
+    // span:nth-of-type(2){
+    //     left: 95%;
+    //     text-align: right;
+    // }
+
+    section{
+        width: 98%;
+        display: flex;
+        height: auto;
+        margin: auto;
+        align-items: center;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .items{
+            min-width: 24%;
+            height: 80%;
+            margin: 0 12px 0 0;
+            position: relative;
+            left: 0;
+            transition: 0.5s;
+
+            picture{
+                display: flex;
+                width: 100%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    
+}

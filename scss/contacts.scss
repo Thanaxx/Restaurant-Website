@@ -1,0 +1,63 @@
+@import "./components";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.contacts-container{
+    width: 100%;
+    min-height: auto;
+    padding-top: 80px;
+    text-align: center;
+    @include indention();
+
+    @include tablet{
+        @include responsiveIndention();
+    }
+
+    .contacts-header{
+        color: $mainFont;
+        margin-top: 50px;
+
+        h1{
+            font-size: 55px;
+            font-weight: lighter;
+
+            @include tablet{
+                font-size: 35px;
+            }
+        }
+        p{
+            font-size: 18px;
+
+            @include tablet{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .contacts-info{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px 0;
+
+        @include tablet{
+            flex-direction: column;
+        }
+
+        h2{
+            color: $mainFont;
+            font-size: 25px;
+            span{
+                font-weight: lighter;
+                font-size: 18px;
+            }
+            @include tablet{
+                padding: 10px 0;
+                font-size: 20px;
+            }
+        }
+    }
+}

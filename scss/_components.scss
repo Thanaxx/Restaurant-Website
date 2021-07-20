@@ -1,0 +1,56 @@
+// color
+$mainColor: #FFA47B;
+$mainFont: #3A3939;
+$childFont: #DADADA;
+$white: #FFFFFF;
+
+@mixin button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}   
+@mixin hoverButton {
+    background-color: $mainFont;
+    color: $white;
+}
+
+@mixin indention {
+    padding: 100px;
+}
+
+@mixin new {
+    background-color: aquamarine;
+}
+
+@mixin head {
+    font-size: 55px;
+    font-weight: lighter;
+}
+
+@mixin par {
+    font-weight: lighter; 
+    font-size: 18px;
+}
+
+// responsive
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 769px) {
+        @content;
+    }
+}
+
+@mixin responsiveIndention {
+    padding: 100px 30px;
+}

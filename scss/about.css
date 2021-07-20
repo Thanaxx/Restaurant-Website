@@ -1,0 +1,51 @@
+.about-foodie {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .about-foodie {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 100px 30px;
+  }
+}
+
+.about-foodie .about-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.about-foodie .about-left img {
+  width: 400px;
+  height: 450px;
+}
+
+.about-foodie .about-right-details {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto;
+  color: #3A3939;
+  text-align: justify;
+}
+
+.about-foodie .about-right-details p, .about-foodie .about-right-details h1 {
+  padding: 7px 0;
+}
+
+.about-foodie .about-right-details .right-detail-p {
+  line-height: 30px;
+}
+/*# sourceMappingURL=about.css.map */

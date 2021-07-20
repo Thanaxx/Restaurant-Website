@@ -1,0 +1,153 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.blog-page {
+  min-height: 100vh;
+  padding-top: 70px;
+  padding: 100px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .blog-page {
+    padding: 100px 30px;
+  }
+}
+
+.blog-page .blog-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .blog-page .blog-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .blog-page .blog-header .left-title {
+    margin-bottom: 20px;
+  }
+}
+
+.blog-page .blog-header .left-title h1 {
+  font-size: 55px;
+  color: #3A3939;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .blog-page .blog-header .left-title h1 {
+    font-size: 35px;
+  }
+}
+
+.blog-page .blog-header .left-title p {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .blog-page .blog-header .left-title p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .blog-page .blog-header .view-more-btn {
+    width: 100%;
+  }
+}
+
+.blog-page .blog-header .view-more-btn button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 0;
+  width: 180px;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .blog-page .blog-header .view-more-btn button {
+    width: 160px;
+    padding: 8px 0;
+  }
+}
+
+.blog-page .blog-header .view-more-btn button:hover {
+  background-color: #3A3939;
+  color: #FFFFFF;
+}
+
+.blog-page .cuisine-container {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .blog-page .cuisine-container {
+    padding: 10px 0;
+  }
+}
+
+.blog-page .cuisine-container .cuisine-name {
+  width: 33%;
+  margin: auto;
+  padding: 20px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .blog-page .cuisine-container .cuisine-name {
+    width: 50%;
+  }
+}
+
+.blog-page .cuisine-container .cuisine-name img {
+  width: 100%;
+}
+
+.blog-page .cuisine-container .cuisine-name a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .blog-page .cuisine-container .cuisine-name a {
+    font-size: 16px;
+  }
+}
+
+.blog-page .cuisine-container .cuisine-name p:nth-child(2) {
+  color: #3A3939;
+  font-size: 14px;
+  color: #FFA47B;
+}
+
+.blog-page .cuisine-container .cuisine-name p:nth-child(4) {
+  color: #3A3939;
+  font-size: 14px;
+  color: #3A3939;
+}
+/*# sourceMappingURL=blogs.css.map */

@@ -1,0 +1,47 @@
+@import "./components";
+
+.reservation-wrapper{
+    background-image: url("../img/clem-onojeghuo-zlABb6Gke24-unsplash\ 1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+    .reservation-details{
+        @include indention();
+        margin: auto;
+        display: flex;
+        color: $white;
+        line-height: 70px;
+
+        @include tablet{
+            @include responsiveIndention();
+        }
+
+        h1{
+            font-size: 55px;
+            font-weight: lighter;
+
+            @include tablet{
+                font-size: 45px;
+            }
+        }
+        p{
+            font-weight: lighter; 
+            font-size: 18px;
+
+            &:nth-child(1){
+                font-weight: bold;
+            }
+
+            &:nth-child(3){
+                line-height: 30px;
+                padding: 10px 0
+            }
+        }
+        button{
+            @include button();
+            padding: 8px 15px;
+            font-size: 14px;
+        }
+    }
+}

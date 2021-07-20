@@ -1,0 +1,37 @@
+@import "./components";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.cartPage{
+
+    @include indention();
+    table{
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    th, td{
+        border: 1px solid #e4e4e4;
+        padding: 8px;
+    }
+    button{
+        @include button();
+        padding: 8px 20px;
+        color: $white;
+    }
+    .remove{
+        background-color: $mainColor;
+    }
+    .clear{
+        background-color: $mainFont;
+    }
+    .checkout{
+        background-color: red;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+}

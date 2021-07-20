@@ -1,0 +1,44 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cartPage {
+  padding: 100px;
+}
+
+.cartPage table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.cartPage th, .cartPage td {
+  border: 1px solid #e4e4e4;
+  padding: 8px;
+}
+
+.cartPage button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  color: #FFFFFF;
+}
+
+.cartPage .remove {
+  background-color: #FFA47B;
+}
+
+.cartPage .clear {
+  background-color: #3A3939;
+}
+
+.cartPage .checkout {
+  background-color: red;
+  width: 100%;
+  padding: 10px 20px;
+}
+/*# sourceMappingURL=cart.css.map */

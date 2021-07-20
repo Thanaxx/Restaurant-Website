@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="./scss/darknav.css">
+    <link rel="stylesheet" type="text/css" href="./scss/topBar.css">
+    <link rel="stylesheet" type="text/css" href="./scss/contacts.css">
+    <link rel="stylesheet" type="text/css" href="./scss/reservation.css">
+    <link rel="stylesheet" type="text/css" href="./scss/blog.css">
+    <link rel="stylesheet" type="text/css" href="./scss/footer.css">
+
+    <title>Foodie Blog</title>
+
+    <link rel="stylesheet" href="./cssFontawesome/all.min.css">
+    <link rel="shortcut icon" href="./img/foodie-black-logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html"><img class="dark-logo" src="./img/foodie-black-logo.svg" alt=""></a>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="menupage.html">MENU</a>
+            <a href="reservationPage.html">RESERVATION</a>
+            <a href="blogs.html">BLOGS</a>
+            <a href="contacts.html">CONTACT</a>
+            <button class="login">LOGIN</button>
+        </div>
+
+        <!-- menu bar -->
+        <div class="nav-bar">
+            <i class="fas fa-2x fa-bars" aria-hidden="true"></i>
+        </div>
+    </nav>
+
+    <!-- START- CODE OF COONTACT PAGE -->
+        <div class="contacts-container" data-aos="fade-up">
+            <div class="contacts-header">
+                <h1>LEAVE US YOUR MESSAGE</h1>
+                <p>One of the best websites on this list for converting readers to patrons– a </p>
+            </div>
+
+            <div class="contacts-info">
+                <h2>EMAIL <br> <span>foodie23@gmail.com</span></h2>
+                <h2>PHONE <br> <span>3456-789-1011</span></h2>
+                <h2>ADDRESS <br> <span>Teneseke, GA</span></h2>
+            </div>
+        </div>
+    <!-- END OF CODE -->
+
+    
+    
+         <!-- RESERVATION -->
+    <div class="reservation-wrapper">
+
+        <div class="reservation-details">
+            <div class="reserve" data-aos="fade-right">
+                <p>RESERVE</p>
+                <h1>PREPARE YOUR SEAT</h1>
+                <p>One of the best websites on this list for converting readers to patrons– a prominent reservation booking form will help to .</p>
+    
+                <a href="reservationPage.html"><button>RESERVE TABLE</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BLOG AREA -->
+    <div class="blogWrapper">
+       <div class="leftBlog" data-aos="fade-right">
+            <p>BLOG</p>
+            <h1>KNOW US MORE</h1>
+            <p>One of the best websites on this list for converting readers to patrons– a prominent reservation booking form will help to .</p>
+       </div>
+
+       <div class="rightBlogBtn" data-aos="fade-left">
+           <a href="blogs.html"><button>LEARN MORE</button></a>
+       </div>
+    </div>
+    
+    <!-- Top bar -->
+    <div class="top-bar">
+            <div class="cancel-bar">
+                <i class="fas fa-2x fa-times" aria-hidden="true"></i>
+            </div>
+
+            <div class="link-topbar">
+                <a href="index.html">HOME</a>
+                <a href="menupage.html">MENU</a>
+                <a href="reservationPage.html">RESERVATION</a>
+                <a href="blogs.html">BLOGS</a>
+                <a href="contacts.html">CONTACT</a>
+                <a href="#">LOGIN</a>
+            </div>
+    </div>
+
+    <footer>
+        <a href="#"><img src="./img/TWITTER.svg" alt="twitter"></a>
+        <a href="#"><img src="./img/FB.svg" alt="facebook"></a>
+        <a href="#"><img src="./img/iggg.svg" alt="instagram"></a>
+
+        <br>
+        <span><a href="#">Info</a></span>
+        <span><a href="#">Support</a></span>
+        <span><a href="#">Marketing</a></span>
+
+        <br>
+        <span><a href="#">Terms of Use</a></span>
+        <span><a href="#">Privacy Policy</a></span>
+
+        <br>
+        <p>© 2021 Foodie.Inc</p>
+    </footer>
+    
+    <script src="./js/stickybar.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 2500
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+.reservationContainer {
+  background-image: url("/Restau/img/clem-onojeghuo-zlABb6Gke24-unsplash 1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .reservationContainer {
+    padding: 100px 30px;
+  }
+}
+
+.reservationContainer .reservationHead {
+  text-align: center;
+  color: #FFFFFF;
+  padding: 30px 0;
+}
+
+.reservationContainer .reservationHead h1 {
+  font-size: 55px;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .reservationContainer .reservationHead h1 {
+    font-size: 30px;
+  }
+}
+
+.reservationContainer .reservationHead p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .reservationContainer .reservationHead p {
+    font-size: 14px;
+  }
+}
+
+.reservationContainer .reserveBtn {
+  padding-top: 50px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .reservationContainer .reserveBtn {
+    padding-top: 10px;
+  }
+}
+
+.reservationContainer .reserveBtn .reservationDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.reservationContainer .reserveBtn .reservationDetails input[type="date"], .reservationContainer .reserveBtn .reservationDetails input[type="time"], .reservationContainer .reserveBtn .reservationDetails select, .reservationContainer .reserveBtn .reservationDetails button {
+  padding: 15px 5px;
+  width: 24%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .reservationContainer .reserveBtn .reservationDetails input[type="date"], .reservationContainer .reserveBtn .reservationDetails input[type="time"], .reservationContainer .reserveBtn .reservationDetails select, .reservationContainer .reserveBtn .reservationDetails button {
+    width: 75%;
+    margin: 8px 0px;
+  }
+}
+
+.reservationContainer .reserveBtn .reservationDetails button {
+  background-color: #FFA47B;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .reservationContainer .reserveBtn .reservationDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main {
+  width: 100%;
+  height: auto;
+  padding: 100px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  main {
+    padding: 100px 30px;
+  }
+}
+
+main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+main header h1 {
+  font-size: 55px;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  main header h1 {
+    font-size: 35px;
+  }
+}
+
+main header p span {
+  font-size: 40px;
+  margin: 0px 5px;
+  cursor: pointer;
+  color: #3A3939;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 19px;
+}
+
+main header p span:hover {
+  background-color: #3A3939;
+  color: #FFFFFF;
+}
+
+main section {
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
+}
+
+main section::-webkit-scrollbar {
+  display: none;
+}
+
+main section .items {
+  min-width: 24%;
+  height: 80%;
+  margin: 0 12px 0 0;
+  position: relative;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main section .items picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+main section .items picture img {
+  width: 100%;
+}
+/*# sourceMappingURL=reservationPge.css.map */

@@ -1,0 +1,124 @@
+@import "./components";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.blog-page{
+    min-height: 100vh;
+    padding-top: 70px;
+    @include indention();
+
+    @include tablet{
+        @include responsiveIndention();
+    }
+
+    .blog-header{
+        display: flex;
+        padding: 30px 0;
+        justify-content: space-around;
+        align-items: center;
+
+        @include tablet{
+            flex-direction: column;
+        }
+    
+
+        .left-title{
+
+            @include tablet{
+                margin-bottom: 20px;
+            }
+            h1{
+                font-size: 55px;
+                color: $mainFont;
+                font-weight: lighter;
+
+                @include tablet{
+                    font-size: 35px;
+                }
+            }
+
+            p{
+                font-weight: lighter;
+                font-size: 18px;
+
+                @include tablet{
+                    font-size: 15px;
+                }
+            
+            }
+        }
+
+        .view-more-btn{
+            @include tablet{
+                width: 100%;
+            }
+
+            button{
+                @include button();
+                padding: 10px 0;
+                width: 180px;
+                background-color: white;
+                border: 1px solid gray;
+
+                @include tablet{
+                    width: 160px;
+                    padding: 8px 0;
+                }
+
+                &:hover{
+                    @include hoverButton();
+                }
+            }
+        }
+    }
+
+    .cuisine-container{
+        padding: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include tablet{
+            padding: 10px 0;
+        }
+        
+        .cuisine-name{
+            width: 33%;
+            margin: auto;
+            padding: 20px;
+
+            @include tablet{
+                width: 50%;
+            }
+            
+            img{
+                width: 100%;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+
+                @include tablet{
+                    font-size: 16px;
+                }
+            }
+            p{
+                &:nth-child(2){
+                    color: $mainFont;
+                    font-size: 14px;
+                    color: $mainColor;
+                }
+
+                &:nth-child(4){
+                    color: $mainFont;
+                    font-size: 14px;
+                    color: $mainFont;
+                }
+            }
+        }
+    }
+}

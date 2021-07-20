@@ -1,0 +1,88 @@
+@import "./components";
+
+.featured-menu{
+    @include indention();
+
+    @include tablet{
+        @include responsiveIndention();
+    }
+
+    h1, p{
+        text-align: center;
+        line-height: 45px;
+    }
+    h1{
+        font-size: 45px;
+        font-weight: lighter;
+    }
+    p{
+        font-size: 18px;
+    }
+
+    // menu
+    .menu-names{
+        padding: 70px 0;
+
+        .menu{
+            display: flex;
+            margin-bottom: 20px;
+
+            @include tablet{
+                flex-direction: column;
+            }
+
+            .menu-image{
+                @include tablet{
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+
+            .menu-description{
+                margin: auto;
+                margin-left: 50px;
+                
+                p{
+                    line-height: 60px;
+                    text-align: left;
+
+                    @include tablet{
+                        flex-direction: column;
+                    }
+
+                    &:nth-child(1){
+                        font-weight: bold;
+                        font-size: 22px;
+                        letter-spacing: 3px;
+                    }
+                    &:nth-child(2){
+                        line-height: 25px;
+                    }
+                }
+                a{
+                    color: $mainFont;
+                    line-height: 50px;
+                }
+                
+            }
+
+            
+        }
+        .menu:nth-child(2){
+            flex-direction: row-reverse;
+            
+            @include tablet{
+                flex-direction: column;
+            }
+            
+            .menu-description{
+                margin-right: 50px;
+                margin-left: 0px;
+
+                @include tablet{
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+}

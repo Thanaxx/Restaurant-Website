@@ -1,0 +1,222 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.transition-out {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.active {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #ffffff;
+}
+
+.active .nav-logo .light-logo {
+  display: none;
+}
+
+.active .nav-logo .dark-logo {
+  display: block;
+}
+
+.active .nav-links a {
+  color: #3A3939;
+}
+
+.active .nav-links a:hover {
+  border: 1px solid #3A3939;
+}
+
+.active .nav-links button {
+  color: #3A3939;
+}
+
+.active .nav-links button:hover {
+  border: 1px solid #3A3939;
+}
+
+.active .nav-bar i {
+  color: #3A3939;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background-color: #574e8b00;
+  width: 100%;
+  height: 80px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+nav .nav-logo {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+
+nav .nav-logo .light-logo {
+  width: 100px;
+  display: block;
+}
+
+nav .nav-logo .dark-logo {
+  width: 100px;
+  display: none;
+}
+
+nav .nav-links {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  nav .nav-links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav .nav-links {
+    display: none;
+  }
+}
+
+nav .nav-links a {
+  color: #FFFFFF;
+  margin: 0px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 10px;
+}
+
+nav .nav-links a:hover {
+  border: 1px solid white;
+}
+
+nav .nav-links button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #ffdead00;
+  font-size: 17px;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+nav .nav-links button:hover {
+  border: 1px solid white;
+}
+
+nav .nav-bar {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  nav .nav-bar {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav .nav-bar {
+    opacity: 1;
+  }
+}
+
+nav .nav-bar i {
+  color: #FFFFFF;
+}
+
+.foodie-main {
+  min-height: 100vh;
+  padding-top: 70px;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../img/cover.jpg");
+  opacity: 1;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .foodie-main {
+    padding: 100px 30px;
+  }
+}
+
+.foodie-main .cover-title {
+  margin: auto;
+  width: 100%;
+}
+
+.foodie-main .cover-title p {
+  color: #FFA47B;
+}
+
+.foodie-main .cover-title h1 {
+  color: #FFFFFF;
+  font-size: 100px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .foodie-main .cover-title h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .foodie-main .cover-title h1 {
+    font-size: 35px;
+  }
+}
+
+.foodie-main .cover-title h1 span {
+  font-weight: 400;
+  color: #FFA47B;
+}
+
+.foodie-main .cover-title .menu-button button {
+  padding: 12px 30px;
+  font-size: 15px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .foodie-main .cover-title .menu-button button {
+    padding: 10px 30px;
+    font-size: 13px;
+  }
+}
+
+.foodie-main .cover-title .menu-button .browse-menu {
+  background: none;
+}
+
+.foodie-main .cover-title .menu-button .browse-menu a {
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=coverpage.css.map */

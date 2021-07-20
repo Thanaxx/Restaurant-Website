@@ -1,0 +1,174 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menupageWrapper {
+  padding-top: 80px;
+  padding: 100px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .menupageWrapper {
+    padding: 100px 30px;
+  }
+}
+
+.menupageWrapper .menuHeading {
+  text-align: center;
+  color: #3A3939;
+  padding-bottom: 20px;
+}
+
+.menupageWrapper .menuHeading h1 {
+  letter-spacing: 3px;
+  font-size: 55px;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .menupageWrapper .menuHeading p {
+    font-size: 14px;
+  }
+}
+
+.menupageWrapper .seeCart {
+  text-align: center;
+}
+
+.menupageWrapper .seeCart .searchbox {
+  padding: 8px 10px;
+  width: 30%;
+}
+
+.menupageWrapper .seeCart button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #3A3939;
+  padding: 10px 10px;
+}
+
+.menupageWrapper .menuFilterBtns {
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .menupageWrapper .menuFilterBtns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.menupageWrapper .menuFilterBtns button {
+  width: 15%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 10px;
+  background-color: #DADADA;
+  color: #3A3939;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .menupageWrapper .menuFilterBtns button {
+    padding: 5px;
+  }
+}
+
+.menupageWrapper .menuFilterBtns button:hover {
+  background-color: #3A3939;
+  color: #FFFFFF;
+}
+
+.menupageWrapper .menuList, .menupageWrapper .added-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menupageWrapper .menuList .menuName, .menupageWrapper .added-items .menuName {
+  width: 25%;
+  margin: auto;
+  padding: 20px 30px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .menupageWrapper .menuList .menuName, .menupageWrapper .added-items .menuName {
+    width: 50%;
+  }
+}
+
+.menupageWrapper .menuList .menuName p:nth-child(2), .menupageWrapper .added-items .menuName p:nth-child(2) {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menupageWrapper .menuList .menuName p:nth-child(3), .menupageWrapper .added-items .menuName p:nth-child(3) {
+  font-size: 13px;
+}
+
+.menupageWrapper .menuList .menuName p:nth-child(4), .menupageWrapper .added-items .menuName p:nth-child(4) {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menupageWrapper .menuList .menuName a img, .menupageWrapper .added-items .menuName a img {
+  width: 100%;
+}
+
+.menupageWrapper .menuList .menuName a:hover, .menupageWrapper .added-items .menuName a:hover {
+  opacity: 0.5;
+}
+
+.menupageWrapper .menuList .menuName input[type="number"], .menupageWrapper .menuList .menuName button, .menupageWrapper .added-items .menuName input[type="number"], .menupageWrapper .added-items .menuName button {
+  width: 100%;
+  margin: 2px 0;
+  padding: 5px;
+}
+
+.menupageWrapper .menuList .menuName button, .menupageWrapper .added-items .menuName button {
+  background-color: #3A3939;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.menupageWrapper .added-items {
+  display: none;
+}
+
+.menupageWrapper .viewMoreItemsBtn {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.menupageWrapper .viewMoreItemsBtn button {
+  padding: 10px;
+  width: 150px;
+  background-color: #3A3939;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=menu.css.map */

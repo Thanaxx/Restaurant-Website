@@ -1,0 +1,57 @@
+@import "./components";
+
+.blogWrapper{
+    @include indention();
+    height: 80vh;
+    display: flex;
+    color: $mainFont;
+    line-height: 70px;
+
+    @include tablet{
+        @include responsiveIndention();
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .leftBlog{
+        margin: auto;
+        margin-right: 100px;
+        
+        h1{
+            @include head();
+            font-weight: bold;
+
+            @include tablet{
+                font-size: 45px
+            }
+        }
+        p{
+            @include par();
+
+            &:nth-child(1){
+                font-weight: bold;
+            }
+
+            &:nth-child(3){
+                line-height: 30px;
+                padding: 10px 0;
+            }
+        }
+        
+        
+    }
+    .rightBlogBtn{
+        margin: auto;
+        @include tablet{
+            width: 100%;
+        }
+
+        button{
+            @include button();
+            padding: 8px 15px;
+            font-size: 14px;
+            background-color: $mainFont;
+            color: $white;
+        }
+    }
+}

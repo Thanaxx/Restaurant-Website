@@ -1,0 +1,56 @@
+.reservation-wrapper {
+  background-image: url("../img/clem-onojeghuo-zlABb6Gke24-unsplash 1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.reservation-wrapper .reservation-details {
+  padding: 100px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+  line-height: 70px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .reservation-wrapper .reservation-details {
+    padding: 100px 30px;
+  }
+}
+
+.reservation-wrapper .reservation-details h1 {
+  font-size: 55px;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .reservation-wrapper .reservation-details h1 {
+    font-size: 45px;
+  }
+}
+
+.reservation-wrapper .reservation-details p {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.reservation-wrapper .reservation-details p:nth-child(1) {
+  font-weight: bold;
+}
+
+.reservation-wrapper .reservation-details p:nth-child(3) {
+  line-height: 30px;
+  padding: 10px 0;
+}
+
+.reservation-wrapper .reservation-details button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=reservation.css.map */

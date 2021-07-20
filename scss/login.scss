@@ -1,0 +1,72 @@
+@import "./components";
+
+.login-container{
+    display: none;
+    position: fixed;
+    background-color: #000000b2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    form{
+        background: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        width: 400px;
+        padding: 15px;
+        font-size: 18px;
+
+        animation: login;
+        animation-duration: 0.5s;
+    
+        @keyframes login {
+            from{top: -200px;}
+            to{top: 50%;}
+        }
+
+
+        .cancel-bar{
+            padding: 5px 0;
+
+            i{
+                float: right;
+                cursor: pointer;
+            }
+        }
+        .formHeader{
+            margin: 40px 0;
+            h1,p{
+                text-align: center;
+                columns: $mainFont;
+            }
+        }
+        input[type="email"],input[type="password"]{
+            width: 100%;
+            margin: 7px 0;
+            padding: 8px 10px;
+            @include button();
+            border: 1px solid #0000007e;
+        }
+        button{
+            width: 100%;
+            padding: 8px 10px;
+            background-color: $mainFont;
+            @include button();
+            color: $white;
+            margin-top: 15px;
+        }
+        .forgotP{
+            text-decoration: none;
+            font-size: 14px;
+            color: grey;
+        }
+        .signup{
+            text-align: center;
+            padding: 30px 0;
+        }
+    }
+}

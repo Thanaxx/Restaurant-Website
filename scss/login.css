@@ -1,0 +1,96 @@
+.login-container {
+  display: none;
+  position: fixed;
+  background-color: #000000b2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.login-container form {
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: auto;
+  width: 400px;
+  padding: 15px;
+  font-size: 18px;
+  -webkit-animation: login;
+          animation: login;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes login {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes login {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+.login-container form .cancel-bar {
+  padding: 5px 0;
+}
+
+.login-container form .cancel-bar i {
+  float: right;
+  cursor: pointer;
+}
+
+.login-container form .formHeader {
+  margin: 40px 0;
+}
+
+.login-container form .formHeader h1, .login-container form .formHeader p {
+  text-align: center;
+  -webkit-columns: #3A3939;
+          columns: #3A3939;
+}
+
+.login-container form input[type="email"], .login-container form input[type="password"] {
+  width: 100%;
+  margin: 7px 0;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #0000007e;
+}
+
+.login-container form button {
+  width: 100%;
+  padding: 8px 10px;
+  background-color: #3A3939;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+
+.login-container form .forgotP {
+  text-decoration: none;
+  font-size: 14px;
+  color: grey;
+}
+
+.login-container form .signup {
+  text-align: center;
+  padding: 30px 0;
+}
+/*# sourceMappingURL=login.css.map */

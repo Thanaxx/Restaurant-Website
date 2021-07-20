@@ -1,0 +1,85 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contacts-container {
+  width: 100%;
+  min-height: auto;
+  padding-top: 80px;
+  text-align: center;
+  padding: 100px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .contacts-container {
+    padding: 100px 30px;
+  }
+}
+
+.contacts-container .contacts-header {
+  color: #3A3939;
+  margin-top: 50px;
+}
+
+.contacts-container .contacts-header h1 {
+  font-size: 55px;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .contacts-container .contacts-header h1 {
+    font-size: 35px;
+  }
+}
+
+.contacts-container .contacts-header p {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .contacts-container .contacts-header p {
+    font-size: 16px;
+  }
+}
+
+.contacts-container .contacts-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .contacts-container .contacts-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contacts-container .contacts-info h2 {
+  color: #3A3939;
+  font-size: 25px;
+}
+
+.contacts-container .contacts-info h2 span {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .contacts-container .contacts-info h2 {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=contacts.css.map */

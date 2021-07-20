@@ -1,0 +1,38 @@
+@import "./components";
+
+.about-foodie{
+    height: 100vh;
+    display: flex;
+    @include indention();
+
+    @include tablet{
+        flex-direction: column;
+        height: auto;
+        
+        @include responsiveIndention();
+    }
+
+
+    .about-left{
+        flex: 1;
+        align-items: center;
+        text-align: center;
+        img{
+            width: 400px;
+            height: 450px;
+        }
+    }
+    .about-right-details{
+        flex: 1;
+        margin: auto;
+        color: $mainFont;
+        text-align: justify;
+
+        p,h1{
+            padding: 7px 0;
+        }
+        .right-detail-p{
+            line-height: 30px;
+        }
+    }
+}

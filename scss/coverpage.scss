@@ -1,0 +1,199 @@
+@import "./components";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+// sticky bar
+.transition-out{
+    transition: 1s;
+}
+.active{
+    transition: 1s;
+    background-color: #ffffff;
+
+    @include tablet{
+        
+    }
+
+    .nav-logo{
+        
+        .light-logo{
+            display: none;
+        }
+        .dark-logo{
+            display: block;
+        }
+    }
+
+    .nav-links{
+        a{
+            color: $mainFont;
+
+            &:hover{
+                border: 1px solid $mainFont;
+            }
+        }
+        button{
+            color: $mainFont;
+
+            &:hover{
+                border: 1px solid $mainFont;
+            }
+        }
+    }
+
+    .nav-bar{
+        i{
+            color: $mainFont;
+        }
+    }
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    background-color: #574e8b00;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+
+    .nav-logo{
+        position: absolute;
+        left: 30px;
+        top: 20px;
+
+        .light-logo{
+            width: 100px;
+            display: block;
+        }
+        .dark-logo{
+            width: 100px;
+            display: none;
+        }
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 40px;
+        top: 20px;
+
+        @include tablet{
+            display: none;
+        }
+        @include mobile{
+            display: none;
+        }
+
+        a{
+            color: $white;
+            margin: 0px 10px;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 10px;
+
+            &:hover{
+                border: 1px solid white;
+            }
+        }
+            
+        button{
+            @include button();
+            background-color: #ffdead00;
+            font-size: 17px;
+            color: $white;
+            padding: 10px;
+
+            &:hover{
+                border: 1px solid white;
+            }
+        }
+    }
+
+    .nav-bar{
+        position: absolute;
+        right: 40px;
+        top: 30px;
+        opacity: 0;
+        cursor: pointer;
+
+        @include tablet{
+            opacity: 1;
+        }
+        @include mobile{
+            opacity: 1;
+        }
+
+        i{
+            color: $white;
+        }
+    }
+}
+
+.foodie-main{
+    min-height: 100vh;
+    padding-top: 70px;
+    @include indention();
+    display: flex;
+    background-image: url("../img/cover.jpg");
+    opacity: 1;
+
+    @include tablet{
+        @include responsiveIndention();
+    }
+
+    .cover-title{
+        margin: auto;
+        width: 100%;
+
+            p{
+                color: $mainColor;
+            }
+            h1{
+                color: $white;
+                font-size: 100px;
+                font-weight: lighter;
+                text-transform: uppercase;
+
+                @include tablet{
+                    font-size: 50px;
+                }
+                @include mobile{
+                    font-size: 35px;
+                }
+
+                span{
+                    font-weight: 400;
+                    color: $mainColor;
+                } 
+            }
+
+        .menu-button{      
+            button{
+                padding: 12px 30px;
+                font-size: 15px;
+                margin-top: 20px;
+                @include button();
+
+                @include tablet{
+                    padding: 10px 30px;
+                    font-size: 13px;
+                }
+
+            }
+            .browse-menu{
+                background: none;
+                a{
+                    color: $white;
+                }
+            }
+        }
+    }
+
+}
